@@ -1,0 +1,32 @@
+<div class="box-form">
+    <div class="container">
+      <div class="title">User Login</div>
+      <p>Don't have an account? <a class="nav-link-col-md-3" routerLink="/userregistration">Creat Your Account</a> it takes less than a minute</p>
+     <form (ngSubmit)="userLogin()">     
+      <div class="content">
+        <form action="#">
+          <div class="user-details">
+           
+            <div class="input-box" br>
+              <span class="details">Name</span>
+              <input type="text" placeholder="Enter your name" required [(ngModel)]="userlog.cname" id="cname" name="cname">
+            </div>
+           
+           
+            <div class="input-box">
+              <span class="details">Password</span>
+              <input type="password" placeholder="Enter your password" required [(ngModel)]="userlog.cpassword" id="cpassword" name="cpassword">
+            </div>
+           
+         
+         
+          </div>
+          <div class="button">
+            <input type="submit" value="Login">
+          </div>
+        </form>
+      </div>
+      </form>
+      <router-outlet></router-outlet>
+    </div>
+  
